@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo2.png">
+</head>
+
+<body>
+    <header>
+        <div id="header_top">
+            <div id="header_left">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <!-- search menu -->
+            </div>
+
+            <div id="header_right">
+                <!-- light/dark mode & language switch & setting -->
+                <a href="account.html"><img src="images/profile.png" alt="account"></a>
+            </div>
+        </div>
+
+        <nav id="global_nav">
+            <ul>
+                <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16"><path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/></svg><span class="text"> ホーム</span></a></li>
+                <li><a href="project.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-nested" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"/></svg><span class="text"> プロジェクト</span></a></li>
+                <li class="current"><a href="game.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16"><path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/></svg><span class="text"> ゲーム</span></a></li>
+                <li><a href="anime.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff-fill" viewBox="0 0 16 16"><path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.6 3.6 0 0 0-.108-.563 2 2 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2 2 0 0 0-.16-.045 4 4 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.55 2.55 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361s.437 1.732-.36 2.531Z"/><path d="M5.205 10.787a7.6 7.6 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925"/></svg><span class="text"> アニメ</span></a></li>
+                <li><a href="donate.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16"><path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927z"/></svg><span class="text"> 寄付する</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-chevron p-3 m-0 bg-body-tertiary rounded-3">
+                    <li class="breadcrumb-item"> <a class="link-body-emphasis" href="index.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16"><path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/></svg> <span class="visually-hidden">Home</span> </a> </li>
+                    <li class="breadcrumb-item active" aria-current="page">ゲーム</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="main">
+            <section id="top">
+                <h1>ゲーム</h1>
+                <img src="images/hutao.png" alt="hu-tao from genshin impact">
+            </section>
+            <section id="game">
+                <h2>最近やっている</h2>
+                <div id="playing">
+                    <img src="images/valorant.png" alt="valorant">
+                    <img src="images/minecraft.png" alt="minecraft">
+                    <img src="images/clashofclan.png" alt="clash of clan">
+                    <img src="images/mobilelegend.png" alt="mobile legend">
+                </div>
+                <h2>時々やる</h2>
+                <div id="sometime">
+                    <img src="images/gtav.png" alt="gta v">
+                    <img src="images/genshin.png" alt="genshin impact">
+                    <img src="images/wutheringwaves.png" alt="wuthering waves">
+                    <img src="images/eveonline.png" alt="eve online">
+                    <img src="images/brawlstars.png" alt="brawl stars">
+                </div>
+                <h2>昔やってた</h2>
+                <div id="used_to">
+                    <img src="images/pubg.png" alt="pubg">
+                    <img src="images/toweroffantasy.png" alt="tower of fantasy">
+                    <img src="images/palworld.png" alt="palworld">
+                    <img src="images/pokemongo.png" alt="pokemon go">
+                    <img src="images/citiesskyline.png" alt="cities skyline">
+                    <img src="images/pokemonunite.png" alt="pokemon unite">
+                </div>
+                <h2>やりたい</h2>
+                <div id="want_to">
+                    <img src="images/gtavi.png" alt="gta vi">
+                    <img src="images/reddeadredimption.png" alt="red dead redimption 2">
+                    <img src="images/cyberpunk.png" alt="cyberpunk 2077">
+                    <img src="images/eldenring.png" alt="elden ring">
+                    <img src="images/satisfactory.png" alt="satisfactory">
+                    <img src="images/hollowknight.png" alt="hallow knight">
+                    <img src="images/streetfighter6.png" alt="street fighter 6">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Products</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">製品01</a></li>
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">製品02</a></li>
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">製品03</a></li>
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">製品04</a></li>
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">製品05</a></li>
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">製品06</a></li>
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">製品07</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Media</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://discord.gg/qqgG9tQJ" class="nav-link p-0 text-body-secondary">discord</a></li>
+                        <li class="nav-item mb-2"><a href="https://discord.gg/qqgG9tQJ" class="nav-link p-0 text-body-secondary">github</a></li>
+                        <li class="nav-item mb-2"><a href="https://discord.gg/qqgG9tQJ" class="nav-link p-0 text-body-secondary">intstagtam</a></li>
+                        <li class="nav-item mb-2"><a href="https://discord.gg/qqgG9tQJ" class="nav-link p-0 text-body-secondary">tiktok</a></li>
+                        <li class="nav-item mb-2"><a href="https://discord.gg/qqgG9tQJ" class="nav-link p-0 text-body-secondary">twitch</a></li>
+                        <li class="nav-item mb-2"><a href="https://discord.gg/qqgG9tQJ" class="nav-link p-0 text-body-secondary">x</a></li>
+                        <li class="nav-item mb-2"><a href="https://discord.gg/qqgG9tQJ" class="nav-link p-0 text-body-secondary">youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Navigation</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">ホーム</a></li>
+                        <li class="nav-item mb-2"><a href="project.html" class="nav-link p-0 text-body-secondary">プロジェクト</a></li>
+                        <li class="nav-item mb-2"><a href="game.html" class="nav-link p-0 text-body-secondary">ゲーム</a></li>
+                        <li class="nav-item mb-2"><a href="anime.html" class="nav-link p-0 text-body-secondary">アニメ</a></li>
+                        <li class="nav-item mb-2"><a href="donate.html" class="nav-link p-0 text-body-secondary">寄付する</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2025 WAN-LABS. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://discord.gg/qqgG9tQJ" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://discord.gg/qqgG9tQJ" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
